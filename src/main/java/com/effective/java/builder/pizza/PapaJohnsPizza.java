@@ -180,9 +180,7 @@ public class PapaJohnsPizza extends BasePizza
     {
         final String baseToString = super.toString();
 
-        return new StringBuilder(200).append("PapaJohnsPizza = ").append("[").append(baseToString)
-                .append(", pizzaSize=").append(pizzaSize).append(", addGarlicSauce=").append(addGarlicSauce)
-                .append(", pizzaCut=").append(pizzaCut).append(", pizzaSauce=").append(pizzaSauce).append("]")
-                .toString();
+        return new StringBuilder(200).append("PapaJohnsPizza = ").append("[").append(baseToString).append(", pizzaSize=").append(pizzaSize).append(", addGarlicSauce=").append(addGarlicSauce)
+                .append(", pizzaCut=").append(pizzaCut).append(", pizzaSauce=").append(pizzaSauce).append("]").toString();
     }
 }

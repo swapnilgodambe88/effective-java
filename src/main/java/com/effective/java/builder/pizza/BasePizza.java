@@ -54,13 +54,15 @@ public abstract class BasePizza
 
         /**
          * @param pizzaTopping
-         *            The {@link PizzaTopping} to be added to the pizza (cannot be null);
+         *            The {@link PizzaTopping} to be added to the pizza (cannot be
+         *            null);
          * @return T.
-         * @throws NullPointerException If any of the parameter conditions are not met.
+         * @throws NullPointerException
+         *             If any of the parameter conditions are not met.
          */
         public T withTopping(final PizzaTopping pizzaTopping)
         {
-            pizzaToppingsBuilder.add(Objects.requireNonNull(pizzaTopping, ()-> "pizzaTopping: null"));
+            pizzaToppingsBuilder.add(Objects.requireNonNull(pizzaTopping, () -> "pizzaTopping: null"));
             return self();
         }
 
@@ -93,7 +95,6 @@ public abstract class BasePizza
     @Override
     public String toString()
     {
-        return new StringBuilder(200).append(" pizzaToppings=").append(pizzaToppings).append(", pizzaCrust=")
-                .append(pizzaCrust).toString();
+        return new StringBuilder(200).append(" pizzaToppings=").append(pizzaToppings).append(", pizzaCrust=").append(pizzaCrust).toString();
     }
 }

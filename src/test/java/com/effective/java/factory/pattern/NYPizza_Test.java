@@ -3,8 +3,17 @@ package com.effective.java.factory.pattern;
 import org.junit.Assert;
 import org.junit.Test;
 
+/**
+ * White box tests testing the factory pattern.
+ *
+ * @author Swapnil
+ *
+ */
 public class NYPizza_Test
 {
+    /**
+     * @return A {@ NYPizzaStore}.
+     */
     final PizzaStore getNyPizzaStore()
     {
         return new NYPizzaStore();

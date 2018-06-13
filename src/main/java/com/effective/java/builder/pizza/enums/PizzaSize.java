@@ -2,6 +2,7 @@ package com.effective.java.builder.pizza.enums;
 
 /**
  * Enumeration representing the size of Pizza.
+ * 
  * @author Swapnil
  *
  */

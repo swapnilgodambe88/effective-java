@@ -1,10 +1,12 @@
 package com.effective.java.factory.pattern;
 
-public abstract class PizzaStore {
+public abstract class PizzaStore
+{
 
     abstract Pizza createPizza(String item);
 
-    public Pizza orderPizza(final String type) {
+    public Pizza orderPizza(final String type)
+    {
         final Pizza pizza = createPizza(type);
         System.out.println("--- Making a " + pizza.getName() + " ---");
         pizza.prepare();

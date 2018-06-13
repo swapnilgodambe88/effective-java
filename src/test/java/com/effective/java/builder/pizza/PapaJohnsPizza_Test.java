@@ -45,7 +45,8 @@ public class PapaJohnsPizza_Test
     }
 
     /**
-     * Verifies builder appropriately sets the PizzaCrust and PizzaSize for the Pizza.
+     * Verifies builder appropriately sets the PizzaCrust and PizzaSize for the
+     * Pizza.
      */
     @Test
     public void testBuilder_validPizzaCrust()
